@@ -99,6 +99,35 @@ A feature-rich Discord bot with moderation, fun, utility, leveling, welcome mess
 - `/giveaway_reroll` - Reroll winners for a giveaway
 - `/giveaway_list` - List all active giveaways
 
+### Scheduled Announcements
+- Schedule one-time or recurring messages
+- Support for multiple time formats
+- Embed or plain text messages
+- Schedule management with list and cancel features
+- Natural language time parsing
+- `/schedule` - Schedule a message to be sent later
+- `/schedulelist` - List all scheduled messages
+- `/cancelschedule` - Cancel a scheduled message
+
+### Music
+- Play music from YouTube
+- Music queue management
+- Volume control
+- Loop mode
+- Auto-disconnect when channel is empty
+- Detailed now playing information
+- `/play` - Play a song from YouTube
+- `/pause` - Pause the current song
+- `/resume` - Resume playback
+- `/skip` - Skip to the next song
+- `/stop` - Stop playback and clear queue
+- `/queue` - View the music queue
+- `/volume` - Adjust the volume
+- `/loop` - Toggle loop mode
+- `/nowplaying` - Show the current song
+- `/join` - Join your voice channel
+- `/leave` - Leave the voice channel
+
 ## Setup
 
 1. Clone this repository
