@@ -1,4 +1,4 @@
-# General Purpose Discord Bot
+# The Final General Purpose Discord Bot
 
 A feature-rich Discord bot with moderation, fun, utility, leveling, welcome messages, and auto-moderation features similar to popular bots like Probot and MEE6. Uses Discord's slash commands for a modern user experience.
 
