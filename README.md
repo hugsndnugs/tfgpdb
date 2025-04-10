@@ -77,6 +77,28 @@ A feature-rich Discord bot with moderation, fun, utility, leveling, welcome mess
 - `/removerole` - Remove a role from a reaction role message
 - `/listroles` - List all roles in a reaction role message
 
+### Custom Commands
+- Server-specific custom commands
+- Simple text responses
+- Command descriptions and metadata
+- Command usage statistics
+- `/addcmd` - Add a custom command
+- `/editcmd` - Edit an existing custom command
+- `/removecmd` - Remove a custom command
+- `/listcmds` - List all custom commands
+- `/cmdinfo` - View detailed information about a command
+
+### Giveaways
+- Easy-to-setup giveaways with reaction entry
+- Multiple winner support
+- Customizable duration and descriptions
+- Winner rerolling
+- Automatic winner announcement
+- `/giveaway` - Start a new giveaway
+- `/giveaway_end` - End a giveaway early
+- `/giveaway_reroll` - Reroll winners for a giveaway
+- `/giveaway_list` - List all active giveaways
+
 ## Setup
 
 1. Clone this repository
