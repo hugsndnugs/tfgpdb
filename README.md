@@ -128,6 +128,18 @@ A feature-rich Discord bot with moderation, fun, utility, leveling, welcome mess
 - `/join` - Join your voice channel
 - `/leave` - Leave the voice channel
 
+### Ticket System
+- Support ticket creation with reaction buttons
+- Private channels for user support
+- Customizable ticket categories and settings
+- Support role management
+- Ticket logging
+- Simple ticket closure
+- `/ticketpanel` - Create a panel for users to open tickets
+- `/ticketsetup` - Configure ticket system settings
+- `/addsupportrole` - Add a role to the support team
+- `/removesupportrole` - Remove a role from the support team
+
 ## Setup
 
 1. Clone this repository
@@ -174,6 +186,27 @@ When adding the bot to your server, ensure it has the following permissions:
 - aiohttp
 - python-dateutil
 - pytz
+- yt-dlp (for music features)
+- FFmpeg (for music features, must be installed separately and added to PATH)
+
+### FFmpeg Installation
+For music features to work, you need to install FFmpeg:
+
+#### Windows
+1. Download the latest FFmpeg build from [FFmpeg.org](https://ffmpeg.org/download.html) or [gyan.dev](https://www.gyan.dev/ffmpeg/builds/)
+2. Extract the ZIP file to a location on your computer
+3. Add the `bin` folder to your system PATH
+
+#### macOS
+```
+brew install ffmpeg
+```
+
+#### Linux (Ubuntu/Debian)
+```
+sudo apt update
+sudo apt install ffmpeg
+```
 
 ## Contributing
 

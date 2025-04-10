@@ -45,8 +45,20 @@ async def on_app_command_error(interaction, error):
         await interaction.response.send_message("Command not found. Use /help to see available commands.", ephemeral=True)
     elif isinstance(error, app_commands.errors.MissingPermissions):
         await interaction.response.send_message("You don't have permission to use this command.", ephemeral=True)
+    elif isinstance(error, app_commands.errors.CommandOnCooldown):
+        await interaction.response.send_message(f"This command is on cooldown. Try again in {error.retry_after:.2f} seconds.", ephemeral=True)
+    elif isinstance(error, app_commands.errors.CheckFailure):
+        await interaction.response.send_message("You don't meet the requirements to use this command.", ephemeral=True)
+    elif isinstance(error, discord.Forbidden):
+        await interaction.response.send_message("I don't have the required permissions to perform this action.", ephemeral=True)
     else:
+        # Log the full error
+        logging.error(f"Command error: {error}", exc_info=True)
         await interaction.response.send_message(f"An error occurred: {str(error)}", ephemeral=True)
+
+@bot.event
+async def on_error(event, *args, **kwargs):
+    logging.error(f"Event error in {event}", exc_info=True)
 
 async def main():
     async with bot:
