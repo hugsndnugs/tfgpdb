@@ -56,6 +56,27 @@ A feature-rich Discord bot with moderation, fun, utility, leveling, welcome mess
 - `/allowserver` - Allow Discord invites from specific servers
 - `/disallowserver` - Disallow invites from servers
 
+### Polls
+- Create polls with up to 9 options
+- Simple Yes/No polls
+- Automatic vote counting
+- Visual results with progress bars
+- Poll duration control
+- Early poll ending by creator
+- `/poll` - Create a poll with multiple options
+- `/quickpoll` - Create a simple yes/no poll
+- `/endpoll` - End a poll early and display results
+
+### Reaction Roles
+- Role assignment based on message reactions
+- Custom embeds for role menus
+- Add/remove roles with custom emojis
+- Role descriptions
+- `/reactionrole` - Create a reaction role message
+- `/addrole` - Add a role to a reaction role message
+- `/removerole` - Remove a role from a reaction role message
+- `/listroles` - List all roles in a reaction role message
+
 ## Setup
 
 1. Clone this repository
